@@ -3,18 +3,18 @@
 import { createContext, useState, useContext, ReactNode } from "react";
 
 interface Song {
-  title: string
-  description: string
-  urlImage: string
-  audioSrc?: string // El enlace a AWS CloudFront
+  title: string;
+  description: string;
+  urlImage: string;
+  audioSrc?: string; // El enlace a AWS CloudFront
 }
 
 interface PlayerContextData {
-  currentSong: Song | null
-  isPlaying: boolean // NUEVO: Estado de reproducción
-  playSong: (song: Song) => void
-  togglePlayPause: () => void // NUEVO: Función para Pausa/Play
-  setIsPlaying: (playing: boolean) => void // NUEVO: Para uso interno
+  currentSong: Song | null;
+  isPlaying: boolean; // NUEVO: Estado de reproducción
+  playSong: (song: Song) => void;
+  togglePlayPause: () => void; // NUEVO: Función para Pausa/Play
+  setIsPlaying: (playing: boolean) => void; // NUEVO: Para uso interno
 }
 
 export const PlayerContext = createContext({} as PlayerContextData);
