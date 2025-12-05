@@ -1,7 +1,7 @@
-import { ComponentProps, ElementType } from 'react'
+import { ComponentProps, ElementType } from "react";
 
-interface IProps extends ComponentProps<'button'> {
-  icon: ElementType
+interface IProps extends ComponentProps<"button"> {
+  icon: ElementType;
 }
 
 export function ButtonControll({ icon: Icon, ...rest }: IProps) {
@@ -12,5 +12,5 @@ export function ButtonControll({ icon: Icon, ...rest }: IProps) {
     >
       <Icon />
     </button>
-  )
+  );
 }

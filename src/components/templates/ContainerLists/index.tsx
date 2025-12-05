@@ -1,31 +1,31 @@
-import { CardLiked } from '@/components/atoms/CardLiked'
-import { ReactNode } from 'react'
+import { CardLiked } from "@/components/atoms/CardLiked";
+import { ReactNode } from "react";
 
-import { tv, VariantProps } from 'tailwind-variants'
+import { tv, VariantProps } from "tailwind-variants";
 
 const tailVar = tv({
-  base: ['no-scrollbar w-full mb-2 grid gap-6 overflow-y-auto max-h-screen'],
+  base: ["no-scrollbar w-full mb-2 grid gap-6 overflow-y-auto max-h-screen"],
   variants: {
     variant: {
       search:
-        'grid-cols-1 justify-items-center xl:grid-cols-4 sm:grid-cols-3 mobileL:grid-cols-2 sm:justify-between',
+        "grid-cols-1 justify-items-center xl:grid-cols-4 sm:grid-cols-3 mobileL:grid-cols-2 sm:justify-between",
       library:
-        'grid-cols-1 justify-items-center xl:grid-cols-6 sm:grid-cols-3 mobileL:grid-cols-2 sm:justify-between',
-      outline: '',
+        "grid-cols-1 justify-items-center xl:grid-cols-6 sm:grid-cols-3 mobileL:grid-cols-2 sm:justify-between",
+      outline: "",
     },
   },
-})
+});
 
 interface IProps extends VariantProps<typeof tailVar> {
-  showTitle?: boolean
-  title?: string
-  children: ReactNode
-  isLibrary?: boolean
+  showTitle?: boolean;
+  title?: string;
+  children: ReactNode;
+  isLibrary?: boolean;
 }
 
 export function ContainerLists({
   showTitle = false,
-  title = '',
+  title = "",
   isLibrary = false,
   variant,
   children,
@@ -38,5 +38,5 @@ export function ContainerLists({
         {children}
       </ul>
     </section>
-  )
+  );
 }

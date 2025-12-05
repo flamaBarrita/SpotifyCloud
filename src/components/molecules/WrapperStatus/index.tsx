@@ -1,4 +1,4 @@
-import { CircleStatus } from '@/components/atoms/CircleStatus'
+import { CircleStatus } from "@/components/atoms/CircleStatus";
 
 export function WrapperStatus() {
   return (
@@ -7,5 +7,5 @@ export function WrapperStatus() {
       <CircleStatus variant="yellow" />
       <CircleStatus variant="green" />
     </div>
-  )
+  );
 }

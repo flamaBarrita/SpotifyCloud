@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { useContext } from 'react'
+import { useContext } from "react";
 
-import { FooterSignUp } from '@/components/molecules/FooterSignUp'
-import { AsideMenu } from '@/components/organisms/AsideMenu'
-import { FooterPlayer } from '@/components/organisms/FooterPlayer'
-import { AuthContext } from '@/context/AuthContext'
-import { ContainerPlaylist } from '@/components/templates/ContainerPlaylist'
+import { FooterSignUp } from "@/components/molecules/FooterSignUp";
+import { AsideMenu } from "@/components/organisms/AsideMenu";
+import { FooterPlayer } from "@/components/organisms/FooterPlayer";
+import { AuthContext } from "@/context/AuthContext";
+import { ContainerPlaylist } from "@/components/templates/ContainerPlaylist";
 
 export default function Playlist() {
-  const { isLogged } = useContext(AuthContext)
+  const { isLogged } = useContext(AuthContext);
 
   return (
     <main className="flex h-screen flex-col">
@@ -19,5 +19,5 @@ export default function Playlist() {
       </div>
       {isLogged ? <FooterPlayer /> : <FooterSignUp />}
     </main>
-  )
+  );
 }

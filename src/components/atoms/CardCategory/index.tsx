@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { ICategory } from '@/dtos'
-import Image from 'next/image'
-import Link, { LinkProps } from 'next/link'
+import { ICategory } from "@/dtos";
+import Image from "next/image";
+import Link, { LinkProps } from "next/link";
 
 interface IProps extends LinkProps {
-  data: ICategory
+  data: ICategory;
 }
 
 export function CardCategory({ data, ...rest }: IProps) {
@@ -29,5 +29,5 @@ export function CardCategory({ data, ...rest }: IProps) {
         />
       </li>
     </Link>
-  )
+  );
 }

@@ -11,7 +11,7 @@ const AppleIcon = () => (
       fill="white"
     />
   </svg>
-)
+);
 
 const FacebookIcon = () => (
   <svg
@@ -27,7 +27,7 @@ const FacebookIcon = () => (
       fill-opacity="0.9"
     />
   </svg>
-)
+);
 
 const GoogleIcon = () => (
   <svg
@@ -62,10 +62,10 @@ const GoogleIcon = () => (
       fill="#EA4335"
     />
   </svg>
-)
+);
 
 export const CustomIcon = {
   AppleIcon,
   FacebookIcon,
   GoogleIcon,
-}
+};

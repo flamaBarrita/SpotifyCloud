@@ -1,10 +1,10 @@
-import { TableCell, TableRow } from '@/components/ui/table'
-import { IRowMusicPlaylist } from '@/dtos'
-import { Play } from 'lucide-react'
-import Link from 'next/link'
+import { TableCell, TableRow } from "@/components/ui/table";
+import { IRowMusicPlaylist } from "@/dtos";
+import { Play } from "lucide-react";
+import Link from "next/link";
 
 interface IProps {
-  data: IRowMusicPlaylist
+  data: IRowMusicPlaylist;
 }
 
 export function RowPlaylist({ data }: IProps) {
@@ -30,5 +30,5 @@ export function RowPlaylist({ data }: IProps) {
       </TableCell>
       <TableCell className="rounded-e-md">{data.time}</TableCell>
     </TableRow>
-  )
+  );
 }

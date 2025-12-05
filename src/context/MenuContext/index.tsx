@@ -1,30 +1,30 @@
-'use client'
+"use client";
 
-import React, { ReactNode, createContext, useState } from 'react'
+import React, { ReactNode, createContext, useState } from "react";
 
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
 interface MenuContextType {
-  showMenu: boolean
-  handleShowMenu: () => void
+  showMenu: boolean;
+  handleShowMenu: () => void;
 }
 
-const MenuContext = createContext({} as MenuContextType)
+const MenuContext = createContext({} as MenuContextType);
 
 function MenuProvider({ children }: Props) {
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false);
 
   function handleShowMenu() {
-    setShowMenu((prev) => !prev)
+    setShowMenu((prev) => !prev);
   }
 
   return (
     <MenuContext.Provider value={{ showMenu, handleShowMenu }}>
       {children}
     </MenuContext.Provider>
-  )
+  );
 }
 
-export { MenuContext, MenuProvider }
+export { MenuContext, MenuProvider };

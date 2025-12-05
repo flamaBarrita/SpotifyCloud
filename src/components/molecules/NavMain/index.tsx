@@ -1,6 +1,6 @@
-import { NavItem } from '@/components/atoms/NavItem'
+import { NavItem } from "@/components/atoms/NavItem";
 
-import { Home, Search, Library } from 'lucide-react'
+import { Home, Search, Library } from "lucide-react";
 
 export function NavMain() {
   return (
@@ -9,5 +9,5 @@ export function NavMain() {
       <NavItem text="Search" icon={Search} href="/search" />
       <NavItem text="Your Library" icon={Library} href="/library" />
     </nav>
-  )
+  );
 }

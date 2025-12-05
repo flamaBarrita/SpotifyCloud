@@ -1,9 +1,9 @@
-import { ButtonPlay } from '@/components/atoms/ButtonPlay'
-import { ICardDaily } from '@/dtos'
-import Image from 'next/image'
+import { ButtonPlay } from "@/components/atoms/ButtonPlay";
+import { ICardDaily } from "@/dtos";
+import Image from "next/image";
 
 interface IProps {
-  data: ICardDaily
+  data: ICardDaily;
 }
 
 export function CardArtist({ data }: IProps) {
@@ -34,5 +34,5 @@ export function CardArtist({ data }: IProps) {
         </div>
       </li>
     </a>
-  )
+  );
 }

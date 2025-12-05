@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { FormSignUpStepTwo } from '@/components/organisms/FormSignUpStepTwo'
+import { FormSignUpStepTwo } from "@/components/organisms/FormSignUpStepTwo";
 
 export function SignUpStepTwo() {
   return (
@@ -12,11 +12,11 @@ export function SignUpStepTwo() {
         <FormSignUpStepTwo />
         <div className=" flex w-full flex-col items-center justify-center gap-8">
           <p className="text-start text-sm">
-            This site is protected by reCAPTCHA and the Google{' '}
+            This site is protected by reCAPTCHA and the Google{" "}
             <Link href="#" className="underline">
               Privacy Policy
-            </Link>{' '}
-            and{' '}
+            </Link>{" "}
+            and{" "}
             <Link href="#" className="underline">
               Terms of Service
             </Link>
@@ -24,5 +24,5 @@ export function SignUpStepTwo() {
         </div>
       </div>
     </section>
-  )
+  );
 }

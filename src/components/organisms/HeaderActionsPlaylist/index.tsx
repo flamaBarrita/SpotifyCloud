@@ -1,5 +1,5 @@
-import { DropdownCompactTable } from '@/components/molecules/DropdownCompactTable'
-import { WrapperActionsPlaylist } from '@/components/molecules/WrapperActionsPlaylist'
+import { DropdownCompactTable } from "@/components/molecules/DropdownCompactTable";
+import { WrapperActionsPlaylist } from "@/components/molecules/WrapperActionsPlaylist";
 
 export function HeaderActionsPlaylist() {
   return (
@@ -7,5 +7,5 @@ export function HeaderActionsPlaylist() {
       <WrapperActionsPlaylist />
       <DropdownCompactTable />
     </header>
-  )
+  );
 }

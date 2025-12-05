@@ -1,7 +1,7 @@
-import { Check } from 'lucide-react'
+import { Check } from "lucide-react";
 
 interface IProps {
-  text: string
+  text: string;
 }
 
 export function CheckText({ text }: IProps) {
@@ -10,5 +10,5 @@ export function CheckText({ text }: IProps) {
       <Check />
       <span className="w-full">{text}</span>
     </p>
-  )
+  );
 }

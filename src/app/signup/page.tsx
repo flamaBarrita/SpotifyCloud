@@ -1,5 +1,5 @@
-import { HeaderAd } from '@/components/organisms/HeaderAd'
-import { SignUpStepOne } from '@/components/templates/SignUpStepOne'
+import { HeaderAd } from "@/components/organisms/HeaderAd";
+import { SignUpStepOne } from "@/components/templates/SignUpStepOne";
 // import { SignUpStepTwo } from '@/components/templates/SignUpStepTwo'
 
 export default function SignUp() {
@@ -8,5 +8,5 @@ export default function SignUp() {
       <HeaderAd variant="secundary" />
       <SignUpStepOne />
     </main>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import { Heart } from 'lucide-react'
+import { Heart } from "lucide-react";
 
-import { ButtonAction } from '@/components/atoms/ButtonAction'
-import { ButtonPlay } from '@/components/atoms/ButtonPlay'
-import { DropdownMorePlaylist } from '../DropdownMorePlaylist'
+import { ButtonAction } from "@/components/atoms/ButtonAction";
+import { ButtonPlay } from "@/components/atoms/ButtonPlay";
+import { DropdownMorePlaylist } from "../DropdownMorePlaylist";
 
 export function WrapperActionsPlaylist() {
   return (
@@ -11,5 +11,5 @@ export function WrapperActionsPlaylist() {
       <ButtonAction icon={Heart} label="Save To Your Library" type="button" />
       <DropdownMorePlaylist />
     </div>
-  )
+  );
 }

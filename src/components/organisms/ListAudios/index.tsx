@@ -1,8 +1,8 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
 interface IProps {
-  TitleList: string
-  children: ReactNode
+  TitleList: string;
+  children: ReactNode;
 }
 
 export function ListAudios({ TitleList, children }: IProps) {
@@ -23,5 +23,5 @@ export function ListAudios({ TitleList, children }: IProps) {
         {children}
       </ul>
     </>
-  )
+  );
 }

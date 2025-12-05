@@ -1,6 +1,6 @@
-import { ButtonSign } from '@/components/atoms/ButtonSign'
-import { InputNormal } from '@/components/atoms/InputNormal'
-import Link from 'next/link'
+import { ButtonSign } from "@/components/atoms/ButtonSign";
+import { InputNormal } from "@/components/atoms/InputNormal";
+import Link from "next/link";
 
 export function FormSignUpStepOne() {
   return (
@@ -25,5 +25,5 @@ export function FormSignUpStepOne() {
         <div className="h-[1px] w-full bg-zinc-300" />
       </div>
     </form>
-  )
+  );
 }

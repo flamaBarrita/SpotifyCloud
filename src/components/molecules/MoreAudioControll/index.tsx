@@ -1,5 +1,5 @@
-import { VolumeControll } from '@/components/atoms/VolumeControll'
-import { Laptop2, LayoutList, Maximize2, Mic2 } from 'lucide-react'
+import { VolumeControll } from "@/components/atoms/VolumeControll";
+import { Laptop2, LayoutList, Maximize2, Mic2 } from "lucide-react";
 
 export function MoreAudioControll() {
   return (
@@ -10,5 +10,5 @@ export function MoreAudioControll() {
       <VolumeControll />
       <Maximize2 size={20} />
     </div>
-  )
+  );
 }

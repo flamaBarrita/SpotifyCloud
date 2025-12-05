@@ -1,4 +1,4 @@
-import { Volume } from 'lucide-react'
+import { Volume } from "lucide-react";
 
 export function VolumeControll() {
   return (
@@ -8,5 +8,5 @@ export function VolumeControll() {
       </div>
       <Volume size={20} />
     </div>
-  )
+  );
 }

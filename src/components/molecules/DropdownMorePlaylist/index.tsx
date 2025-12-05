@@ -6,9 +6,9 @@ import {
   Radio,
   Search,
   SquareCode,
-} from 'lucide-react'
+} from "lucide-react";
 
-import { ButtonAction } from '@/components/atoms/ButtonAction'
+import { ButtonAction } from "@/components/atoms/ButtonAction";
 
 import {
   DropdownMenu,
@@ -20,8 +20,8 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import Image from 'next/image'
+} from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
 export function DropdownMorePlaylist() {
   return (
@@ -87,5 +87,5 @@ export function DropdownMorePlaylist() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

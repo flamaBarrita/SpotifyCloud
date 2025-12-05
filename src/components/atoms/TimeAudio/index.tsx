@@ -7,5 +7,5 @@ export function TimeAudio() {
       </div>
       <span className="text-xs text-zinc-400">04:24</span>
     </div>
-  )
+  );
 }

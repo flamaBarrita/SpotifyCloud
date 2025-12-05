@@ -1,8 +1,8 @@
-import { popularArtists } from '@/database/popularArtists'
-import { ListAudios } from '../ListAudios'
-import { CardArtist } from '@/components/molecules/CardArtist/indext'
-import { playlistsSpotify } from '@/database/playlistSpotify'
-import { CardAudio } from '@/components/molecules/CardAudio'
+import { popularArtists } from "@/database/popularArtists";
+import { ListAudios } from "../ListAudios";
+import { CardArtist } from "@/components/molecules/CardArtist/indext";
+import { playlistsSpotify } from "@/database/playlistSpotify";
+import { CardAudio } from "@/components/molecules/CardAudio";
 
 export function HomeListSignIn() {
   return (
@@ -23,5 +23,5 @@ export function HomeListSignIn() {
         ))}
       </ListAudios>
     </section>
-  )
+  );
 }

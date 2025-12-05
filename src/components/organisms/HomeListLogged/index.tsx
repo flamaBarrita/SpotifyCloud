@@ -1,8 +1,8 @@
-import { CardAudio } from '@/components/molecules/CardAudio'
-import { CardLastMusic } from '@/components/molecules/CardLastMusic'
-import { ListAudios } from '@/components/organisms/ListAudios'
-import { lastsListen } from '@/database/LastListen'
-import { madeForMe } from '@/database/madeForMe'
+import { CardAudio } from "@/components/molecules/CardAudio";
+import { CardLastMusic } from "@/components/molecules/CardLastMusic";
+import { ListAudios } from "@/components/organisms/ListAudios";
+import { lastsListen } from "@/database/LastListen";
+import { madeForMe } from "@/database/madeForMe";
 
 export function HomeListLogged() {
   return (
@@ -19,5 +19,5 @@ export function HomeListLogged() {
         ))}
       </ListAudios>
     </section>
-  )
+  );
 }

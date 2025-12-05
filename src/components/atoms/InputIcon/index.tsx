@@ -1,7 +1,7 @@
-import { ComponentProps, ElementType } from 'react'
+import { ComponentProps, ElementType } from "react";
 
-interface IProps extends ComponentProps<'input'> {
-  icon: ElementType
+interface IProps extends ComponentProps<"input"> {
+  icon: ElementType;
 }
 
 export function InputIcon({ icon: Icon, ...rest }: IProps) {
@@ -13,5 +13,5 @@ export function InputIcon({ icon: Icon, ...rest }: IProps) {
         className="w-full text-sm text-zinc-900 outline-none placeholder:text-zinc-400"
       />
     </div>
-  )
+  );
 }

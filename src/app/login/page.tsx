@@ -1,5 +1,5 @@
-import { HeaderIcon } from '@/components/molecules/HeaderIcon'
-import { SeactionFormLogin } from '@/components/organisms/SeactionFormLogin'
+import { HeaderIcon } from "@/components/molecules/HeaderIcon";
+import { SeactionFormLogin } from "@/components/organisms/SeactionFormLogin";
 
 export default function Login() {
   return (
@@ -7,5 +7,5 @@ export default function Login() {
       <HeaderIcon />
       <SeactionFormLogin />
     </main>
-  )
+  );
 }

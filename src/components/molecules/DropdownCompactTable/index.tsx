@@ -1,33 +1,33 @@
-'use client'
+"use client";
 
-import * as React from 'react'
+import * as React from "react";
 
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import { Button } from '@/components/ui/button'
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
-import { List } from 'lucide-react'
+import { List } from "lucide-react";
 
 export function DropdownCompactTable() {
-  const [check, setCheck] = React.useState<0 | 1>(1)
+  const [check, setCheck] = React.useState<0 | 1>(1);
 
   function handleCheckCompact() {
-    setCheck(0)
+    setCheck(0);
   }
 
   function handleCheckList() {
-    setCheck(1)
+    setCheck(1);
   }
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button className="gap-2 border-0 bg-transparent outline-none focus:border-0">
-          {' '}
+          {" "}
           List <List />
         </Button>
       </DropdownMenuTrigger>
@@ -48,5 +48,5 @@ export function DropdownCompactTable() {
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

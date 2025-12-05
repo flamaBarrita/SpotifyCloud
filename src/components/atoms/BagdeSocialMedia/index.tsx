@@ -1,8 +1,8 @@
-import Link, { LinkProps } from 'next/link'
-import { ElementType } from 'react'
+import Link, { LinkProps } from "next/link";
+import { ElementType } from "react";
 
 interface IProps extends LinkProps {
-  icon: ElementType
+  icon: ElementType;
 }
 
 export function BagdeSocialMedia({ icon: Icon, ...rest }: IProps) {
@@ -13,5 +13,5 @@ export function BagdeSocialMedia({ icon: Icon, ...rest }: IProps) {
     >
       <Icon />
     </Link>
-  )
+  );
 }

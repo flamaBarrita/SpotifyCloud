@@ -1,6 +1,6 @@
-import { ButtonSign } from '@/components/atoms/ButtonSign'
-import { InputNormal } from '@/components/atoms/InputNormal'
-import { InputPassword } from '@/components/atoms/InputPassword'
+import { ButtonSign } from "@/components/atoms/ButtonSign";
+import { InputNormal } from "@/components/atoms/InputNormal";
+import { InputPassword } from "@/components/atoms/InputPassword";
 
 export function FormLogin() {
   return (
@@ -35,5 +35,5 @@ export function FormLogin() {
         </div>
       </div>
     </form>
-  )
+  );
 }

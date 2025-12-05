@@ -1,7 +1,7 @@
-import { ButtonSign } from '@/components/atoms/ButtonSign'
-import { CardPlan } from '@/components/molecules/CardPlan'
-import { plans } from '@/database/plans'
-import Image from 'next/image'
+import { ButtonSign } from "@/components/atoms/ButtonSign";
+import { CardPlan } from "@/components/molecules/CardPlan";
+import { plans } from "@/database/plans";
+import Image from "next/image";
 
 export function InfoPlans() {
   return (
@@ -32,5 +32,5 @@ export function InfoPlans() {
         </div>
       </div>
     </section>
-  )
+  );
 }

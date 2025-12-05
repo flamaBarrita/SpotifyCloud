@@ -1,10 +1,10 @@
-import { ButtonPlay } from '@/components/atoms/ButtonPlay'
-import { ICardDaily } from '@/dtos'
-import Image from 'next/image'
-import { ComponentProps } from 'react'
+import { ButtonPlay } from "@/components/atoms/ButtonPlay";
+import { ICardDaily } from "@/dtos";
+import Image from "next/image";
+import { ComponentProps } from "react";
 
-interface IProps extends ComponentProps<'a'> {
-  data: ICardDaily
+interface IProps extends ComponentProps<"a"> {
+  data: ICardDaily;
 }
 
 export function CardLastMusic({ data, ...rest }: IProps) {
@@ -23,5 +23,5 @@ export function CardLastMusic({ data, ...rest }: IProps) {
       <strong>{data.title}</strong>
       <ButtonPlay variant="green" />
     </a>
-  )
+  );
 }

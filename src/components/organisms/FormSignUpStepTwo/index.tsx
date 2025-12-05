@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { ButtonSign } from '@/components/atoms/ButtonSign'
-import { InputPassword } from '@/components/atoms/InputPassword'
+import { ButtonSign } from "@/components/atoms/ButtonSign";
+import { InputPassword } from "@/components/atoms/InputPassword";
 
 export function FormSignUpStepTwo() {
   return (
@@ -17,5 +17,5 @@ export function FormSignUpStepTwo() {
       </InputPassword.Container>
       <ButtonSign text="Create account" variant="green" />
     </form>
-  )
+  );
 }

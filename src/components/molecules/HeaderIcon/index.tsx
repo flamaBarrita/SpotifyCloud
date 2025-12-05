@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 export function HeaderIcon() {
   return (
@@ -8,5 +8,5 @@ export function HeaderIcon() {
         <Image src="/IconDark.svg" width={144} height={44} alt="Icon" />
       </Link>
     </header>
-  )
+  );
 }

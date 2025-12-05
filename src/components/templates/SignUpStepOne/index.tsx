@@ -1,8 +1,8 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { ButtonIcon } from '@/components/atoms/ButtonIcon'
-import { CustomIcon } from '@/components/atoms/CustomsIcon'
-import { FormSignUpStepOne } from '@/components/organisms/FormSignUpStepOne'
+import { ButtonIcon } from "@/components/atoms/ButtonIcon";
+import { CustomIcon } from "@/components/atoms/CustomsIcon";
+import { FormSignUpStepOne } from "@/components/organisms/FormSignUpStepOne";
 
 export function SignUpStepOne() {
   return (
@@ -31,17 +31,17 @@ export function SignUpStepOne() {
         </div>
         <div className=" flex w-full flex-col items-center justify-center gap-8">
           <span className="text-base text-zinc-400">
-            Already have an account?{' '}
+            Already have an account?{" "}
             <Link href="/login" className="text-white underline">
               Log in here.
             </Link>
           </span>
           <p className="text-start text-sm">
-            This site is protected by reCAPTCHA and the Google{' '}
+            This site is protected by reCAPTCHA and the Google{" "}
             <Link href="#" className="underline">
               Privacy Policy
-            </Link>{' '}
-            and{' '}
+            </Link>{" "}
+            and{" "}
             <Link href="#" className="underline">
               Terms of Service
             </Link>
@@ -49,5 +49,5 @@ export function SignUpStepOne() {
         </div>
       </div>
     </section>
-  )
+  );
 }

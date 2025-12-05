@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown } from "lucide-react";
 
 export function ActionDropdownProfile() {
   return (
@@ -11,5 +11,5 @@ export function ActionDropdownProfile() {
       <strong className="hidden lg:block">Max J</strong>
       <ChevronDown />
     </div>
-  )
+  );
 }

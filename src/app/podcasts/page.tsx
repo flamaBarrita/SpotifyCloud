@@ -1,9 +1,9 @@
-import { FooterSignUp } from '@/components/molecules/FooterSignUp'
-import { Header } from '@/components/organisms/Header'
-import { AsideMenu } from '@/components/organisms/AsideMenu'
-import { ListDaily } from '@/components/organisms/ListDaily'
-import { podcastsBests, podcastsBestsByAuthor } from '@/database/podcasts'
-import { ContainerLists } from '@/components/templates/ContainerLists'
+import { FooterSignUp } from "@/components/molecules/FooterSignUp";
+import { Header } from "@/components/organisms/Header";
+import { AsideMenu } from "@/components/organisms/AsideMenu";
+import { ListDaily } from "@/components/organisms/ListDaily";
+import { podcastsBests, podcastsBestsByAuthor } from "@/database/podcasts";
+import { ContainerLists } from "@/components/templates/ContainerLists";
 
 export default function Podcasts() {
   return (
@@ -30,5 +30,5 @@ export default function Podcasts() {
       </div>
       <FooterSignUp />
     </main>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-import { CardAudio } from '@/components/molecules/CardAudio'
-import { ICardDaily } from '@/dtos'
+import { CardAudio } from "@/components/molecules/CardAudio";
+import { ICardDaily } from "@/dtos";
 
 interface IProps {
-  title: string
-  data: ICardDaily[]
+  title: string;
+  data: ICardDaily[];
 }
 
 export function ListDaily({ title, data }: IProps) {
@@ -16,5 +16,5 @@ export function ListDaily({ title, data }: IProps) {
         ))}
       </div>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import { RowPlaylist } from '@/components/molecules/RowPlaylist'
-import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
+import { RowPlaylist } from "@/components/molecules/RowPlaylist";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 import {
   Table,
@@ -7,11 +7,11 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table'
-import { IPlaylist } from '@/dtos'
-import { Clock } from 'lucide-react'
+} from "@/components/ui/table";
+import { IPlaylist } from "@/dtos";
+import { Clock } from "lucide-react";
 
-interface IProps extends Omit<IPlaylist, 'data'> {}
+interface IProps extends Omit<IPlaylist, "data"> {}
 
 export function TablePlaylist({ audios }: IProps) {
   return (
@@ -35,5 +35,5 @@ export function TablePlaylist({ audios }: IProps) {
       </Table>
       <ScrollBar orientation="vertical" />
     </ScrollArea>
-  )
+  );
 }

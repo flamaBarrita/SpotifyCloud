@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import { BagdeSocialMedia } from '@/components/atoms/BagdeSocialMedia'
-import { Facebook, Globe, Instagram, Twitter } from 'lucide-react'
+import { BagdeSocialMedia } from "@/components/atoms/BagdeSocialMedia";
+import { Facebook, Globe, Instagram, Twitter } from "lucide-react";
 
 export function FooterMain() {
   return (
@@ -98,5 +98,5 @@ export function FooterMain() {
         </div>
       </div>
     </section>
-  )
+  );
 }

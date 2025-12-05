@@ -1,8 +1,8 @@
-import { CardBenefitPremium } from '@/components/molecules/CardBenefitPremium'
-import { ICardBenefit } from '@/dtos'
+import { CardBenefitPremium } from "@/components/molecules/CardBenefitPremium";
+import { ICardBenefit } from "@/dtos";
 
 interface IProps {
-  data: ICardBenefit[]
+  data: ICardBenefit[];
 }
 
 export function BenefitsPremium({ data }: IProps) {
@@ -15,5 +15,5 @@ export function BenefitsPremium({ data }: IProps) {
         ))}
       </ul>
     </section>
-  )
+  );
 }

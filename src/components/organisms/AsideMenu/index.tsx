@@ -1,22 +1,22 @@
-'use client'
+"use client";
 
-import { useContext } from 'react'
+import { useContext } from "react";
 
-import { Globe, X } from 'lucide-react'
+import { Globe, X } from "lucide-react";
 
-import { ButtonIcon } from '@/components/atoms/ButtonIcon'
-import { LinkInstallApp } from '@/components/atoms/LinkInstallApp'
-import { InfosAsideMenu } from '@/components/molecules/InfosAsideMenu'
-import { NavMain } from '@/components/molecules/NavMain'
-import { NavOptionsList } from '@/components/molecules/NavOptionsList'
-import { NavSuggest } from '@/components/molecules/NavSuggest'
-import { WrapperStatus } from '@/components/molecules/WrapperStatus'
-import { MenuContext } from '@/context/MenuContext'
+import { ButtonIcon } from "@/components/atoms/ButtonIcon";
+import { LinkInstallApp } from "@/components/atoms/LinkInstallApp";
+import { InfosAsideMenu } from "@/components/molecules/InfosAsideMenu";
+import { NavMain } from "@/components/molecules/NavMain";
+import { NavOptionsList } from "@/components/molecules/NavOptionsList";
+import { NavSuggest } from "@/components/molecules/NavSuggest";
+import { WrapperStatus } from "@/components/molecules/WrapperStatus";
+import { MenuContext } from "@/context/MenuContext";
 
 export function AsideMenu() {
-  const { showMenu, handleShowMenu } = useContext(MenuContext)
+  const { showMenu, handleShowMenu } = useContext(MenuContext);
 
-  const styledAside = `absolute z-10 lg:relative lg:transform lg:transition-transform lg:duration-300 lg:translate-x-0 h-full w-72 bg-zinc-950 p-6 transform transition-transform duration-300 ${showMenu ? 'translate-x-0' : '-translate-x-full'}`
+  const styledAside = `absolute z-10 lg:relative lg:transform lg:transition-transform lg:duration-300 lg:translate-x-0 h-full w-72 bg-zinc-950 p-6 transform transition-transform duration-300 ${showMenu ? "translate-x-0" : "-translate-x-full"}`;
 
   return (
     <aside className={styledAside}>
@@ -42,5 +42,5 @@ export function AsideMenu() {
         </div>
       </div>
     </aside>
-  )
+  );
 }

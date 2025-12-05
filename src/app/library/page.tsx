@@ -1,9 +1,9 @@
-import { CardAudio } from '@/components/molecules/CardAudio'
-import { AsideMenu } from '@/components/organisms/AsideMenu'
-import { FooterPlayer } from '@/components/organisms/FooterPlayer'
-import { HeaderLibrary } from '@/components/organisms/HeaderLibrary'
-import { ContainerLists } from '@/components/templates/ContainerLists'
-import { playlists } from '@/database/playlists'
+import { CardAudio } from "@/components/molecules/CardAudio";
+import { AsideMenu } from "@/components/organisms/AsideMenu";
+import { FooterPlayer } from "@/components/organisms/FooterPlayer";
+import { HeaderLibrary } from "@/components/organisms/HeaderLibrary";
+import { ContainerLists } from "@/components/templates/ContainerLists";
+import { playlists } from "@/database/playlists";
 
 export default function Library() {
   return (
@@ -26,5 +26,5 @@ export default function Library() {
       </div>
       <FooterPlayer />
     </main>
-  )
+  );
 }

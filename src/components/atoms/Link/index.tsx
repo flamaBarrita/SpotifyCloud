@@ -1,18 +1,18 @@
-import Link, { LinkProps } from 'next/link'
+import Link, { LinkProps } from "next/link";
 
-import { tv, VariantProps } from 'tailwind-variants'
+import { tv, VariantProps } from "tailwind-variants";
 
 const tailVar = tv({
-  base: ['text-sm font-bold'],
+  base: ["text-sm font-bold"],
   variants: {
     variant: {
-      primary: 'rounded p-3 hover:bg-zinc-600',
+      primary: "rounded p-3 hover:bg-zinc-600",
     },
   },
-})
+});
 
 interface IProps extends LinkProps, VariantProps<typeof tailVar> {
-  text: string
+  text: string;
 }
 
 export function LinkNav({ text, variant, ...rest }: IProps) {
@@ -20,5 +20,5 @@ export function LinkNav({ text, variant, ...rest }: IProps) {
     <Link className={tailVar({ variant })} {...rest}>
       {text}
     </Link>
-  )
+  );
 }

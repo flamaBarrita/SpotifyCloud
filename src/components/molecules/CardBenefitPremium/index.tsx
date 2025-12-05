@@ -1,9 +1,9 @@
-import { ICardBenefit } from '@/dtos'
-import Image from 'next/image'
-import Link from 'next/link'
+import { ICardBenefit } from "@/dtos";
+import Image from "next/image";
+import Link from "next/link";
 
 interface IProps {
-  data: ICardBenefit
+  data: ICardBenefit;
 }
 
 export function CardBenefitPremium({ data }: IProps) {
@@ -25,5 +25,5 @@ export function CardBenefitPremium({ data }: IProps) {
         </div>
       </li>
     </Link>
-  )
+  );
 }

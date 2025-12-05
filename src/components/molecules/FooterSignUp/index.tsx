@@ -1,4 +1,4 @@
-import { ButtonSign } from '@/components/atoms/ButtonSign'
+import { ButtonSign } from "@/components/atoms/ButtonSign";
 
 export function FooterSignUp() {
   return (
@@ -14,5 +14,5 @@ export function FooterSignUp() {
         <ButtonSign text="Sign up free" variant="primary" />
       </div>
     </footer>
-  )
+  );
 }

@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { useContext } from 'react'
+import { useContext } from "react";
 
-import { LinkNav } from '@/components/atoms/Link'
-import { ActionDropdownProfile } from '@/components/molecules/ActionDropdownProfile'
-import { WrapperBtnsControll } from '@/components/molecules/WrapperBtnsControll'
-import { MenuContext } from '@/context/MenuContext'
-import { Menu } from 'lucide-react'
+import { LinkNav } from "@/components/atoms/Link";
+import { ActionDropdownProfile } from "@/components/molecules/ActionDropdownProfile";
+import { WrapperBtnsControll } from "@/components/molecules/WrapperBtnsControll";
+import { MenuContext } from "@/context/MenuContext";
+import { Menu } from "lucide-react";
 
 export function HeaderLibrary() {
-  const { handleShowMenu } = useContext(MenuContext)
+  const { handleShowMenu } = useContext(MenuContext);
 
   return (
     <header className="flex w-full items-center justify-between bg-zinc-950 px-6 py-2">
@@ -32,5 +32,5 @@ export function HeaderLibrary() {
         <ActionDropdownProfile />
       </div>
     </header>
-  )
+  );
 }

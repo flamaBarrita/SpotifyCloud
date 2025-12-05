@@ -2,13 +2,13 @@ import {
   Tooltip,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip'
-import { TooltipContent } from '@radix-ui/react-tooltip'
-import { ElementType, forwardRef } from 'react'
+} from "@/components/ui/tooltip";
+import { TooltipContent } from "@radix-ui/react-tooltip";
+import { ElementType, forwardRef } from "react";
 
 interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  label: string
-  icon: ElementType
+  label: string;
+  icon: ElementType;
 }
 
 const ButtonAction = forwardRef<HTMLButtonElement, IProps>(
@@ -30,10 +30,10 @@ const ButtonAction = forwardRef<HTMLButtonElement, IProps>(
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-    )
+    );
   },
-)
+);
 
-ButtonAction.displayName = 'Button'
+ButtonAction.displayName = "Button";
 
-export { ButtonAction }
+export { ButtonAction };

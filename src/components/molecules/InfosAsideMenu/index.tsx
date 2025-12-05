@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 export function InfosAsideMenu() {
   return (
@@ -29,5 +29,5 @@ export function InfosAsideMenu() {
         Cookies
       </Link>
     </div>
-  )
+  );
 }

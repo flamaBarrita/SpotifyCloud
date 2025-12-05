@@ -1,8 +1,8 @@
-import { IPlaylist } from '@/dtos'
-import { countLikes } from '@/utils/countLikes'
-import Image from 'next/image'
+import { IPlaylist } from "@/dtos";
+import { countLikes } from "@/utils/countLikes";
+import Image from "next/image";
 
-interface IProps extends Omit<IPlaylist, 'audios'> {}
+interface IProps extends Omit<IPlaylist, "audios"> {}
 
 export function HeaderInfoPlayList({ data }: IProps) {
   return (
@@ -51,5 +51,5 @@ export function HeaderInfoPlayList({ data }: IProps) {
         </div>
       </div>
     </header>
-  )
+  );
 }

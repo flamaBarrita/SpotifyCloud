@@ -1,17 +1,17 @@
-import { tv, VariantProps } from 'tailwind-variants'
+import { tv, VariantProps } from "tailwind-variants";
 
 const tailVar = tv({
-  base: ['py-1 px-2 border rounded'],
+  base: ["py-1 px-2 border rounded"],
   variants: {
     variant: {
-      primary: 'border-blue-500 text-white bg-blue-500',
-      secundary: 'border-blue-500 text-blue-500',
+      primary: "border-blue-500 text-white bg-blue-500",
+      secundary: "border-blue-500 text-blue-500",
     },
   },
-})
+});
 
 interface IProps extends VariantProps<typeof tailVar> {
-  text: string
+  text: string;
 }
 
 export function Bagde({ text, variant }: IProps) {
@@ -19,5 +19,5 @@ export function Bagde({ text, variant }: IProps) {
     <div className={tailVar({ variant })}>
       <strong>{text}</strong>
     </div>
-  )
+  );
 }

@@ -1,21 +1,21 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { ButtonSign } from '@/components/atoms/ButtonSign'
-import { IPlan } from '@/dtos'
-import { Bagde } from '@/components/atoms/Bagde'
-import { CheckText } from '@/components/atoms/CheckText'
+import { ButtonSign } from "@/components/atoms/ButtonSign";
+import { IPlan } from "@/dtos";
+import { Bagde } from "@/components/atoms/Bagde";
+import { CheckText } from "@/components/atoms/CheckText";
 
 interface IProps {
-  data: IPlan
+  data: IPlan;
 }
 
 function Terms() {
   return (
     <span className="text-zinc-600">
-      {' '}
+      {" "}
       1 month free not available for users who have already tried Premium.
     </span>
-  )
+  );
 }
 
 export function CardPlan({ data }: IProps) {
@@ -27,7 +27,7 @@ export function CardPlan({ data }: IProps) {
             <Bagde
               key={item.id}
               text={item.text}
-              variant={data.isPay && item.id === 1 ? 'primary' : 'secundary'}
+              variant={data.isPay && item.id === 1 ? "primary" : "secundary"}
             />
           ))}
         </div>
@@ -52,5 +52,5 @@ export function CardPlan({ data }: IProps) {
         {data.isPay && <Terms />}
       </div>
     </li>
-  )
+  );
 }

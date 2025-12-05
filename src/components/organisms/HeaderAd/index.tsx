@@ -1,17 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import { VariantProps, tv } from 'tailwind-variants'
+import { VariantProps, tv } from "tailwind-variants";
 
 const talVars = tv({
-  base: 'w-[480px] items-center gap-6',
+  base: "w-[480px] items-center gap-6",
   variants: {
     variant: {
-      primary: 'flex',
-      secundary: 'hidden',
+      primary: "flex",
+      secundary: "hidden",
     },
   },
-})
+});
 
 interface IProps extends VariantProps<typeof talVars> {}
 
@@ -48,5 +48,5 @@ export function HeaderAd({ variant }: IProps) {
         </div>
       </nav>
     </header>
-  )
+  );
 }

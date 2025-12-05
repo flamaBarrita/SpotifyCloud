@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { Bookmark, Heart, Plus } from 'lucide-react'
+import { Bookmark, Heart, Plus } from "lucide-react";
 
-import { NavOption } from '@/components/atoms/NavOption'
+import { NavOption } from "@/components/atoms/NavOption";
 
 export function NavOptionsList() {
   return (
@@ -11,5 +11,5 @@ export function NavOptionsList() {
       <NavOption icon={Heart} text="Liked Songs" variant="heart" href="#" />
       <NavOption icon={Bookmark} text="Your Episodes" variant="save" href="#" />
     </div>
-  )
+  );
 }

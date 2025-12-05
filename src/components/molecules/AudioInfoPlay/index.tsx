@@ -1,13 +1,13 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 interface IProps {
-  urlImage: string
-  alt: string
-  title: string
+  urlImage: string;
+  alt: string;
+  title: string;
   info: {
-    album: string
-    title: string
-  }
+    album: string;
+    title: string;
+  };
 }
 
 export function AudioInfoPlay({ urlImage, title, alt, info }: IProps) {
@@ -19,5 +19,5 @@ export function AudioInfoPlay({ urlImage, title, alt, info }: IProps) {
         <span className="text-xs text-zinc-400">{info.album}</span>
       </div>
     </div>
-  )
+  );
 }

@@ -1,38 +1,38 @@
-'use client'
+"use client";
 
-import { useContext, useState } from 'react'
+import { useContext, useState } from "react";
 
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname, useRouter } from "next/navigation";
 
-import { Menu, Search } from 'lucide-react'
+import { Menu, Search } from "lucide-react";
 
-import { AuthContext } from '@/context/AuthContext'
+import { AuthContext } from "@/context/AuthContext";
 
-import { InputIcon } from '@/components/atoms/InputIcon'
-import { ButtonSign } from '@/components/atoms/ButtonSign'
-import { WrapperBtnsControll } from '@/components/molecules/WrapperBtnsControll'
-import { ActionDropdownProfile } from '@/components/molecules/ActionDropdownProfile'
-import { MenuContext } from '@/context/MenuContext'
+import { InputIcon } from "@/components/atoms/InputIcon";
+import { ButtonSign } from "@/components/atoms/ButtonSign";
+import { WrapperBtnsControll } from "@/components/molecules/WrapperBtnsControll";
+import { ActionDropdownProfile } from "@/components/molecules/ActionDropdownProfile";
+import { MenuContext } from "@/context/MenuContext";
 
 export function Header() {
-  const pathName = usePathname()
-  const navigation = useRouter()
-  const { isLogged } = useContext(AuthContext)
-  const { handleShowMenu } = useContext(MenuContext)
+  const pathName = usePathname();
+  const navigation = useRouter();
+  const { isLogged } = useContext(AuthContext);
+  const { handleShowMenu } = useContext(MenuContext);
 
   const [isInputSearchFocused, setIsInputSearchFocused] =
-    useState<boolean>(false)
+    useState<boolean>(false);
 
   function handleNavigateLogin() {
-    navigation.push('/login')
+    navigation.push("/login");
   }
 
   function handleNavigateSignUp() {
-    navigation.push('/signup')
+    navigation.push("/signup");
   }
 
   function handleFocusInputSearch() {
-    setIsInputSearchFocused((prev) => !prev)
+    setIsInputSearchFocused((prev) => !prev);
   }
 
   return (
@@ -45,7 +45,7 @@ export function Header() {
           <Menu size={20} />
         </button>
         <WrapperBtnsControll isInputSearchFocused={isInputSearchFocused} />
-        {pathName === '/search' && (
+        {pathName === "/search" && (
           <InputIcon
             icon={Search}
             type="text"
@@ -75,5 +75,5 @@ export function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }

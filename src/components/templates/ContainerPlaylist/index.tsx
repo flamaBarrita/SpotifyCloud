@@ -1,9 +1,9 @@
-import { Header } from '@/components/organisms/Header'
-import { HeaderInfoPlayList } from '@/components/organisms/HeaderInfoPlaylist'
-import { HeaderActionsPlaylist } from '@/components/organisms/HeaderActionsPlaylist'
-import { TablePlaylist } from '@/components/organisms/TablePlaylist'
+import { Header } from "@/components/organisms/Header";
+import { HeaderInfoPlayList } from "@/components/organisms/HeaderInfoPlaylist";
+import { HeaderActionsPlaylist } from "@/components/organisms/HeaderActionsPlaylist";
+import { TablePlaylist } from "@/components/organisms/TablePlaylist";
 
-import { playlistJazz } from '@/database/playlistJazz'
+import { playlistJazz } from "@/database/playlistJazz";
 
 export function ContainerPlaylist() {
   return (
@@ -15,5 +15,5 @@ export function ContainerPlaylist() {
         <TablePlaylist audios={playlistJazz.audios} />
       </div>
     </section>
-  )
+  );
 }

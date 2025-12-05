@@ -1,18 +1,18 @@
-'use client'
+"use client";
 
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
-import { ButtonIcon } from '@/components/atoms/ButtonIcon'
-import { ButtonSign } from '@/components/atoms/ButtonSign'
-import { FormLogin } from '@/components/templates/FormLogin'
+import { ButtonIcon } from "@/components/atoms/ButtonIcon";
+import { ButtonSign } from "@/components/atoms/ButtonSign";
+import { FormLogin } from "@/components/templates/FormLogin";
 
-import { CustomIcon } from '@/components/atoms/CustomsIcon'
+import { CustomIcon } from "@/components/atoms/CustomsIcon";
 
 export function SeactionFormLogin() {
-  const navigation = useRouter()
+  const navigation = useRouter();
 
   function handleNavigateSignUp() {
-    navigation.push('/signup')
+    navigation.push("/signup");
   }
 
   return (
@@ -53,5 +53,5 @@ export function SeactionFormLogin() {
         />
       </div>
     </section>
-  )
+  );
 }

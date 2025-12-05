@@ -1,15 +1,15 @@
 export const size = {
-  mobileS: '320px',
-  mobileM: '375px',
-  mobileL: '425px',
-  tabletS: '600px',
-  tabletM: '660px',
-  tabletL: '768px',
-  laptopS: '860px',
-  laptopM: '1024px',
-  laptopL: '1440px',
-  desktop: '2560px',
-} as const
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  tabletS: "600px",
+  tabletM: "660px",
+  tabletL: "768px",
+  laptopS: "860px",
+  laptopM: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+} as const;
 
 const mediaQuery = {
   device: {
@@ -24,6 +24,6 @@ const mediaQuery = {
     laptopL: `(min-width: ${size.laptopL})`,
     desktop: `(min-width: ${size.desktop})`,
   },
-} as const
+} as const;
 
-export { mediaQuery }
+export { mediaQuery };

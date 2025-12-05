@@ -1,19 +1,19 @@
-'use client'
+"use client";
 
-import { useContext } from 'react'
+import { useContext } from "react";
 
-import { FooterSignUp } from '@/components/molecules/FooterSignUp'
-import { Header } from '@/components/organisms/Header'
-import { AsideMenu } from '@/components/organisms/AsideMenu'
-import { CardCategory } from '@/components/atoms/CardCategory'
-import { dataCategory } from '@/database/categories'
-import { ContainerLists } from '@/components/templates/ContainerLists'
-import { FooterPlayer } from '@/components/organisms/FooterPlayer'
+import { FooterSignUp } from "@/components/molecules/FooterSignUp";
+import { Header } from "@/components/organisms/Header";
+import { AsideMenu } from "@/components/organisms/AsideMenu";
+import { CardCategory } from "@/components/atoms/CardCategory";
+import { dataCategory } from "@/database/categories";
+import { ContainerLists } from "@/components/templates/ContainerLists";
+import { FooterPlayer } from "@/components/organisms/FooterPlayer";
 
-import { AuthContext } from '@/context/AuthContext'
+import { AuthContext } from "@/context/AuthContext";
 
 export default function Search() {
-  const { isLogged } = useContext(AuthContext)
+  const { isLogged } = useContext(AuthContext);
 
   return (
     <main className="flex h-screen w-full flex-col">
@@ -30,5 +30,5 @@ export default function Search() {
       </div>
       {isLogged ? <FooterPlayer /> : <FooterSignUp />}
     </main>
-  )
+  );
 }

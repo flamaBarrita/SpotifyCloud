@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { ButtonSign } from '@/components/atoms/ButtonSign'
+import { ButtonSign } from "@/components/atoms/ButtonSign";
 
 export function BannerPremium() {
   return (
@@ -19,9 +19,9 @@ export function BannerPremium() {
       <p>
         <Link href="#" className="underline">
           Terms and conditions apply.
-        </Link>{' '}
+        </Link>{" "}
         1 month free not available for users who have already tried Premium.
       </p>
     </section>
-  )
+  );
 }

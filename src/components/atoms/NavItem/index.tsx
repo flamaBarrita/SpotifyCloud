@@ -1,9 +1,9 @@
-import Link, { LinkProps } from 'next/link'
-import { ElementType } from 'react'
+import Link, { LinkProps } from "next/link";
+import { ElementType } from "react";
 
 interface Iprops extends LinkProps {
-  icon: ElementType
-  text: string
+  icon: ElementType;
+  text: string;
 }
 
 export function NavItem({ icon: Icon, text, ...rest }: Iprops) {
@@ -15,5 +15,5 @@ export function NavItem({ icon: Icon, text, ...rest }: Iprops) {
       <Icon />
       {text}
     </Link>
-  )
+  );
 }

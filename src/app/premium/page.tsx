@@ -1,9 +1,9 @@
-import { BannerPremium } from '@/components/organisms/BannerPremium'
-import { BenefitsPremium } from '@/components/organisms/BenefitsPremium'
-import { HeaderAd } from '@/components/organisms/HeaderAd'
-import { benefitsPremium } from '@/database/benefitPremium'
-import { InfoPlans } from '@/components/organisms/InfoPlans'
-import { FooterMain } from '@/components/organisms/FooterMain'
+import { BannerPremium } from "@/components/organisms/BannerPremium";
+import { BenefitsPremium } from "@/components/organisms/BenefitsPremium";
+import { HeaderAd } from "@/components/organisms/HeaderAd";
+import { benefitsPremium } from "@/database/benefitPremium";
+import { InfoPlans } from "@/components/organisms/InfoPlans";
+import { FooterMain } from "@/components/organisms/FooterMain";
 
 export default function Premium() {
   return (
@@ -14,5 +14,5 @@ export default function Premium() {
       <InfoPlans />
       <FooterMain />
     </main>
-  )
+  );
 }
